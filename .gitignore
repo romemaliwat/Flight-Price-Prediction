@@ -1,7 +1,21 @@
-venv/ 
-__pycache__/ 
-*.pyc 
-.env 
-data/ 
-".venv" 
-".ipynb_checkpoints/" 
+# Virtual environment
+.venv/
+venv/
+
+# Python cache and temp files
+__pycache__/
+*.pyc
+.env
+
+# Jupyter checkpoint folders
+.ipynb_checkpoints/
+
+# Ignore dataset folders (outside src)
+data/
+
+# Keep data module under src
+!src/data/
+!src/data/**
+
+# But keep placeholder file
+!src/data/.gitkeep
